@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33aaeaea"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Création d'un composant"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fr.formation.fingertag.EditTag
+        android:id="@+id/editTag"
+        android:layout_width="320dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#ffffffff"
+        app:tagColor="0x55000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btGreen"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:onClick="gtag"
+        android:text="Green Tag"
+        app:layout_constraintStart_toStartOf="@+id/editTag"
+        app:layout_constraintTop_toTopOf="@+id/btRed" />
+
+    <Button
+        android:id="@+id/btRed"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="rtag"
+        android:text="Red Tag"
+        app:layout_constraintEnd_toStartOf="@+id/btBlue"
+        app:layout_constraintStart_toEndOf="@+id/btGreen"
+        app:layout_constraintTop_toBottomOf="@+id/editTag" />
+
+    <Button
+        android:id="@+id/btBlue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:onClick="btag"
+        android:text="Blue Tag"
+        app:layout_constraintEnd_toEndOf="@+id/editTag"
+        app:layout_constraintTop_toTopOf="@+id/btRed" />
+
+    <Button
+        android:id="@+id/btClear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="maz"
+        android:text="Clear"
+        app:layout_constraintEnd_toEndOf="@+id/btBlue"
+        app:layout_constraintStart_toStartOf="@+id/btGreen"
+        app:layout_constraintTop_toBottomOf="@+id/btRed" />
+
+    <Button
+        android:id="@+id/btJpeg"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Save Jpeg"
+        android:onClick="saveJpeg"
+        app:layout_constraintStart_toStartOf="@+id/btGreen"
+        app:layout_constraintTop_toBottomOf="@+id/btClear" />
+
+    <Button
+        android:id="@+id/btLoadSign"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Load Signature"
+        android:onClick="btLoadSign"
+        app:layout_constraintEnd_toEndOf="@+id/btBlue"
+        app:layout_constraintTop_toBottomOf="@+id/btClear" />
+
+</android.support.constraint.ConstraintLayout>

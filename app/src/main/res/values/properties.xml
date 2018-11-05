@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditTag">
+        <attr name="tagColor" format="integer"/>
+        <attr name="tagWeight" format="integer"/>
+        <attr name="bkgColor" format="color"/>
+    </declare-styleable>
+</resources>
