@@ -17,14 +17,13 @@ git clone  https://github.com/flormich/finger-tag
 ## ✨️ Usage
 <br>
 
-## 📺 [Picture]
+## 📺 [Demo]
 
-<br>
-<p align="center">
- <--!<img src="https://github.com/flormich/finger-tag/blob/master/IntentDemo.JPG">-->
-<br><br><br>
+<p align="center"
+  
+ ![logo](fingerTag.gif )
+ 
 </p>
-
 
 
 
