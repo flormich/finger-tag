@@ -11,7 +11,6 @@ Clone this reposoitory
 
 ```
 git clone  https://github.com/flormich/finger-tag
-
 ```
 
 ## ✨️ Usage
