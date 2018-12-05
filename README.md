@@ -21,7 +21,7 @@ git clone  https://github.com/flormich/finger-tag
 
 <p align="center"
   
- ![logo](fingerTag.gif)
+ ![logo](ressource/finger-Tag.gif)
  
 </p>
 
